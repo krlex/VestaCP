@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Provisioning virtual machine..."
 echo "Installing Vesta"
