@@ -1,0 +1,5 @@
+---
+
+- name: Cpanel
+  become: yes
+  curl: ""
