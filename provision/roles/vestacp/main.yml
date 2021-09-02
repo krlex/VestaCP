@@ -1,0 +1,10 @@
+---
+- name: Download script for installation VestaCP 
+  become: yes
+  ansible.builtin.get_url: 
+    url: "curl -O http://vestacp.com/pub/vst-install.sh"
+    dest: "/home/vagrant/" 
+
+- name: Starting installation VestaCP
+  become: yes
+  ansible.builtin.script: "bash /home/vagrant/vst-install.sh --force -y no --nginx yes --phpfpm yes --apache no --vsftpd yes --proftpd no --exim yes --dovecot yes --spamassassin yes --clamav yes --named yes --iptables yes --fail2ban yes --mysql yes --postgresql no --remi no --quota no --hostname vestacp --email user@example.com --password Sekret"
