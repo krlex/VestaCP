@@ -1,4 +1,4 @@
+.vagrant/
 *.log
 *.retry
 *.pyc
-.vagrant/
